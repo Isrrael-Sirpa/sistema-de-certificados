@@ -1,0 +1,38 @@
+/* Colores observados en ft.umsa.bo; no equivalen a un manual de marca. */
+:root {
+  --brand-petroleum: #024966;
+  --brand-dark: #01364d;
+  --brand-red: #bb2026;
+  --brand-active: #0051a0;
+  --brand-heading: #32639e;
+  --brand-white: #fff;
+  --brand-background: #f5f7f8;
+  /* Neutros y estados propuestos para esta aplicación. */
+  --ink: #172f3e;
+  --muted: #536774;
+  --line: #dce4e8;
+  --surface: #fff;
+  --surface-subtle: #eef3f5;
+  --success: #166347;
+  --success-bg: #eaf6ef;
+  --warning: #795214;
+  --warning-bg: #fff5df;
+  --danger: #a32630;
+  --danger-bg: #fcecef;
+  --navy: var(--brand-petroleum);
+  --teal: var(--brand-petroleum);
+  --font-ui: "Noto Sans", sans-serif;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 18px;
+  --shadow-sm: 0 2px 8px #16374906;
+  --shadow: 0 10px 32px #1637490c;
+  --focus: 0 0 0 3px #0051a02b;
+}

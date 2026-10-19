@@ -1,0 +1,62 @@
+<?php
+
+use App\Http\Controllers\ActivityController;
+use App\Http\Controllers\AssetController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CertificateController;
+use App\Http\Controllers\IssuanceController;
+use App\Http\Controllers\ManagementController;
+use App\Http\Controllers\StudentController;
+use App\Http\Controllers\TemplateController;
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', fn () => redirect()->route(auth()->check() ? 'dashboard' : 'login'));
+Route::middleware('guest')->group(function () {
+    Route::get('/ingresar', [AuthController::class, 'create'])->name('login');
+    Route::post('/ingresar', [AuthController::class, 'store'])->middleware('throttle:10,1');
+});
+Route::get('/verificar/{token?}', [CertificateController::class, 'verify'])->middleware('throttle:60,1')->name('verify');
+Route::get('/entrega/{token}', [CertificateController::class, 'delivery'])->middleware('throttle:30,1')->name('delivery');
+Route::middleware('auth')->group(function () {
+    Route::post('/salir', [AuthController::class, 'destroy'])->name('logout');
+    Route::get('/dashboard', [ManagementController::class, 'dashboard'])->name('dashboard');
+    Route::get('/administracion', [ManagementController::class, 'index'])->name('administration');
+    Route::post('/administracion/carreras/{career?}', [ManagementController::class, 'career']);
+    Route::post('/administracion/usuarios/{user?}', [ManagementController::class, 'user']);
+    Route::post('/administracion/tipos/{type?}', [ManagementController::class, 'type']);
+    Route::get('/estudiantes', [StudentController::class, 'index'])->name('students.index');
+    Route::post('/estudiantes', [StudentController::class, 'store']);
+    Route::get('/estudiantes/plantilla-excel', [StudentController::class, 'excelTemplate'])->name('students.excel');
+    Route::post('/importaciones', [StudentController::class, 'importPreview'])->middleware('throttle:10,1');
+    Route::get('/importaciones/{import}', [StudentController::class, 'importShow'])->name('imports.show');
+    Route::post('/importaciones/{import}/confirmar', [StudentController::class, 'importConfirm']);
+    Route::get('/estudiantes/{student}', [StudentController::class, 'show'])->name('students.show');
+    Route::post('/estudiantes/{student}', [StudentController::class, 'update']);
+    Route::get('/actividades', [ActivityController::class, 'index'])->name('activities.index');
+    Route::post('/actividades/{activity?}', [ActivityController::class, 'save']);
+    Route::get('/actividades/{activity}', [ActivityController::class, 'show'])->name('activities.show');
+    Route::post('/actividades/{activity}/participantes', [ActivityController::class, 'participant']);
+    Route::delete('/actividades/{activity}/participantes/{participant}', [ActivityController::class, 'remove']);
+    Route::get('/recursos', [AssetController::class, 'index'])->name('assets.index');
+    Route::post('/recursos', [AssetController::class, 'store']);
+    Route::get('/recursos/{asset}/archivo', [AssetController::class, 'file'])->name('assets.file');
+    Route::get('/plantillas', [TemplateController::class, 'index'])->name('templates.index');
+    Route::post('/plantillas', [TemplateController::class, 'store']);
+    Route::get('/plantillas/{template}/editor', [TemplateController::class, 'edit'])->name('templates.edit');
+    Route::post('/plantillas/{template}/guardar', [TemplateController::class, 'save']);
+    Route::match(['get', 'post'], '/plantillas/{template}/previsualizar', [TemplateController::class, 'preview'])->middleware('throttle:30,1');
+    Route::get('/plantillas/{template}/versiones/{version}', [TemplateController::class, 'version']);
+    Route::post('/plantillas/{template}/duplicar', [TemplateController::class, 'duplicate']);
+    Route::get('/emision', [IssuanceController::class, 'create'])->name('issue');
+    Route::get('/lotes', [IssuanceController::class, 'index'])->name('batches.index');
+    Route::post('/lotes', [IssuanceController::class, 'store']);
+    Route::get('/lotes/{batch}', [IssuanceController::class, 'show'])->name('batches.show');
+    Route::post('/lotes/{batch}/elementos/{item}/revisar', [IssuanceController::class, 'review']);
+    Route::post('/lotes/{batch}/confirmar', [IssuanceController::class, 'confirm']);
+    Route::post('/lotes/{batch}/reintentar', [IssuanceController::class, 'retry']);
+    Route::get('/certificados', [CertificateController::class, 'index'])->name('certificates.index');
+    Route::post('/certificados/exportar', [CertificateController::class, 'bundle']);
+    Route::get('/certificados/{certificate}', [CertificateController::class, 'show'])->name('certificates.show');
+    Route::get('/certificados/{certificate}/pdf', [CertificateController::class, 'download'])->name('certificates.download');
+    Route::post('/certificados/{certificate}/anular', [CertificateController::class, 'revoke']);
+});

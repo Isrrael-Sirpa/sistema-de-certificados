@@ -1,0 +1,182 @@
+{
+  "reviewed_on": "2026-10-18",
+  "timezone": "America/La_Paz",
+  "institution": "Universidad Mayor de San Andrés — Facultad de Tecnología",
+  "usage_note": "Recursos locales de identificación institucional. Su incorporación no afirma adopción ni acreditación oficial de este software. No se generaron emblemas, firmas o sellos mediante IA.",
+  "selected_assets": [
+    {
+      "file": "umsa.png",
+      "master": "umsa-emblem.png",
+      "label": "Escudo de la Universidad Mayor de San Andrés",
+      "source_page": "https://industrial.umsa.bo/es/logos-carrera",
+      "source_url": "https://industrial.umsa.bo/documents/3265709/4976452/logo+umsa.png/7f406af9-7d79-79d0-627c-3ef80c007219?t=1647546665547",
+      "provenance": "Archivo independiente enlazado como Logo Universidad Mayor de San Andrés por el portal oficial de la Carrera de Ingeniería Industrial de la UMSA. Se utiliza exclusivamente el escudo de la Universidad; no se utiliza el emblema de esa facultad ni carrera.",
+      "format": "PNG",
+      "width_px": 600,
+      "height_px": 675,
+      "color_mode": "RGBA",
+      "transparent": true,
+      "visible_alpha_bounds_px": [
+        129,
+        5,
+        458,
+        667
+      ],
+      "sha256": "907697959dde0cd8c762c9e13baaaac6d745b4a63b958938e9d9daacb2b272da",
+      "transformations": "Ninguna. umsa.png y umsa-emblem.png son copias binarias idénticas del archivo descargado, incluidos sus márgenes transparentes.",
+      "recommended_usage": "Aplicación y PDF, con object-fit contain y escala uniforme. A 32 mm de alto ofrece aproximadamente 536 ppp; no estirar a un cuadrado."
+    },
+    {
+      "file": "facultad-official-original.png",
+      "master": "facultad-official-original.png",
+      "label": "Gráfico independiente de Facultad de Tecnología publicado por UMSA",
+      "source_type": "official_university_website",
+      "source_page": "https://www.umsa.bo/umsa-noticias/-/asset_publisher/sIpuYXdbB9M8/content/03-07/20142",
+      "source_url": "https://www.umsa.bo/documents/20142/189706/logo-ft.png/6c720c61-5ddf-f338-96ce-d71db37c33a1?t=1549983540487",
+      "provenance": "Imagen enlazada como Logo Procedencia en la convocatoria de la Facultad de Tecnología publicada en el portal oficial UMSA. Descargada directamente e inspeccionada el 2026-10-18. Incluye emblema multicolor y banda curva roja/azul; se conserva toda la composición.",
+      "format": "PNG",
+      "width_px": 257,
+      "height_px": 231,
+      "color_mode": "P",
+      "transparent": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "visible_alpha_bounds_px": [
+        26,
+        0,
+        257,
+        231
+      ],
+      "sha256": "0944e31c0aaca3453902f6e088a98d5e227c5331d78066bb0c863e3c107955c6",
+      "transformations": "Ninguna; bytes descargados originales. Sin recorte, recoloración, ampliación ni edición.",
+      "recommended_usage": "Interfaz con proporción original y PDF a 19.5 mm de alto (~301 ppp) o 20 mm (~293 ppp); a 24 mm ofrece ~244 ppp. Conservar la banda lateral y toda la imagen. No es un maestro vectorial."
+    }
+  ],
+  "preserved_reference_assets": [
+    {
+      "file": "umsa-white-small.png",
+      "source_url": "https://ft.umsa.bo/documents/20142/33077/blancopeq.png/36f4df4d-7c80-5bed-9451-b09907d7a286",
+      "source_page": "https://ft.umsa.bo/",
+      "width_px": 120,
+      "height_px": 216,
+      "color_mode": "RGBA",
+      "transparent": true,
+      "sha256": "6674a4b85a662f6961ca3d91e8ba3c8d340295c82418c47b6e0317b698d4a094",
+      "finding": "Escudo blanco auténtico usado en el pie institucional. Adecuado para interfaz pequeña sobre fondo oscuro; no seleccionado como maestro para impresión por su resolución."
+    },
+    {
+      "file": "umsa-user-original.png",
+      "source_type": "preexisting_project_asset",
+      "source_asset": "Z5CW8oW6uGaZznYyGNgiZdijPknQvjB2LNWlXNY3.png",
+      "width_px": 1080,
+      "height_px": 1920,
+      "color_mode": "RGBA",
+      "transparent": true,
+      "sha256": "1a7278f0134f6422fcbcb7f75579d0818853f487298de7600965950a7c0aa952",
+      "finding": "Archivo preexistente conservado sin cambios. No se afirma una entrega del usuario basándose únicamente en su nombre o metadata. Se utiliza el escudo cotejado con fuente oficial."
+    },
+    {
+      "file": "facultad.png",
+      "master": "facultad-user-original.jpg",
+      "label": "Emblema de Facultad preexistente en el proyecto; archivo exacto sin fuente oficial comprobada",
+      "source_type": "preexisting_project_asset",
+      "source_asset": "Qn9FysBGEGNkoviGl7i1ajQ28YmhFa3k38KNuWBB.jpg",
+      "corroborating_source_page": "https://ft.umsa.bo/",
+      "corroborating_source_url": "https://ft.umsa.bo/documents/339504/342307/Banner-rhFT.jpg/870e0245-82a1-1055-f88c-22faa299725b",
+      "provenance": "Archivo preexistente del proyecto. El nombre del archivo y los metadatos anteriores no prueban por sí solos que lo aportara el usuario ni su autorización. Su composición general se corresponde con el emblema de Facultad, pero no se encontró una publicación oficial de este archivo exacto. Se conserva sin sobrescribir; para nuevas incorporaciones se recomienda facultad-official-original.png.",
+      "format": "PNG",
+      "width_px": 425,
+      "height_px": 425,
+      "color_mode": "RGB",
+      "transparent": false,
+      "sha256": "c080225ecddbe0215b57c4ad225b61fe9fc11fdd27517063e5cea39ba2a58078",
+      "master_sha256": "44934fa8f1b404e1f48cc8acf6410459cfd800fd051311c4bb57cd2adb4578d1",
+      "transformations": "Conversión JPEG a PNG sin recortar, redibujar, recolorear, quitar el fondo ni ampliar. Conserva exactamente los píxeles decodificados del JPEG original, sus proporciones y su fondo.",
+      "recommended_usage": "Referencia preexistente conservada. Preferir el archivo íntegro descargado del portal oficial para la nueva identidad."
+    }
+  ],
+  "rejected_as_masters": [
+    {
+      "source_url": "https://ft.umsa.bo/documents/339504/342307/Banner-rhFT.jpg/870e0245-82a1-1055-f88c-22faa299725b",
+      "local_reference": "app/public/institutional/reference-banner-rh-ft.jpg",
+      "width_px": 1600,
+      "height_px": 238,
+      "color_mode": "RGB",
+      "finding": "Cabecera compuesta con los dos emblemas, texto y engranajes; usada exclusivamente para corroboración visual. No se recortó ni se incorporó como maestro de los emblemas."
+    },
+    {
+      "source_url": "https://ft.umsa.bo/image/layout_set_logo?img_id=4069573",
+      "local_reference": "app/public/institutional/reference-layout-logo.png",
+      "width_px": 95,
+      "height_px": 95,
+      "color_mode": "RGBA",
+      "finding": "PNG 95x95 con transparencia, icono de perfil claro. No es un emblema institucional. El portal oculta esa imagen por CSS con opacity:0."
+    },
+    {
+      "source_url": "https://dsie.umsa.bo/dsie/docs/2023/facultades/tecnologia/00_ft.pdf",
+      "local_reference": ".runtime/references/tecnologia-dsie.pdf",
+      "finding": "El PDF contiene imágenes de página completa; no ofrece un recurso independiente adecuado. No se recortó."
+    },
+    {
+      "source_url": "https://ft.umsa.bo/documents/339504/0/Informe%2BGestion%2BFacultad%2Bde%2BTecnolog%C3%ADa%2BUMSA%2B%282%29.pdf/184cf19f-e0bb-f2f5-1d47-fbd3db16c508",
+      "local_reference": ".runtime/references/informe-ft.pdf",
+      "finding": "La portada tiene una imagen de página completa; no se usó como maestro. No se extrajeron firmas ni sellos."
+    }
+  ],
+  "academic_offer": {
+    "source_url": "https://ft.umsa.bo/oferta-academica",
+    "verified_names": [
+      "Aeronáutica",
+      "Construcciones Civiles",
+      "Electricidad Industrial",
+      "Electromecánica",
+      "Electrónica y Telecomunicaciones",
+      "Geodesia, Topografía y Geomática",
+      "Mecánica Automotriz",
+      "Mecánica Industrial",
+      "Química Industrial"
+    ]
+  },
+  "observed_website_colors": {
+    "source_url": "https://ft.umsa.bo/",
+    "classification": "Valores observados en CSS del portal; no constituyen un manual normativo confirmado.",
+    "colors": [
+      "#024966",
+      "#BB2026",
+      "#FFFFFF",
+      "#F5F7F8",
+      "#0051A0",
+      "#32639E",
+      "#01364D"
+    ],
+    "white_contrast_ratios": {
+      "#024966": 9.78,
+      "#BB2026": 6.27,
+      "#0051A0": 7.82,
+      "#32639E": 6.15,
+      "#01364D": 12.84
+    }
+  },
+  "pending": [
+    "Maestro independiente de Facultad de mayor resolución, preferentemente vectorial. Se localizó un recurso auténtico independiente 257x231 apto para uso pequeño conservando toda su composición.",
+    "Firmas y sellos autorizados por la administración: no se inventaron ni se extrajeron de documentos públicos.",
+    "No se incorporan logos propios de carreras sin archivos auténticos verificables. Se utilizan los emblemas comunes y el nombre de cada carrera.",
+    "Los recursos de la web no acreditan la adopción oficial del sistema ni un permiso general de reutilización comercial."
+  ],
+  "verified_downloads": [
+    {
+      "file": "reference-banner-rh-ft.jpg",
+      "sha256": "72d2c4c3c738f88b8d053a59225bb4f46babbf1ad6fee97854d0448fe73cad20"
+    },
+    {
+      "file": "reference-layout-logo.png",
+      "sha256": "9194c85cb2a5c36c45bd6af2296324d9aedcf4269c53da94a066df6632af8e75"
+    },
+    {
+      "file": "reference-footer-white.png",
+      "sha256": "6674a4b85a662f6961ca3d91e8ba3c8d340295c82418c47b6e0317b698d4a094"
+    }
+  ]
+}
